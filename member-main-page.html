@@ -1,0 +1,179 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+
+    <title>TGIF</title>
+    <meta content="USA Government Congress Data" name="description">
+    <meta content="SitePoint" name="author">
+    <meta content="Congress Data" property="og:title">
+    <meta content="website" property="og:type">
+    <!--    <meta property="og:url" content="https://www.sitepoint.com/a-basic-html5-template/">-->
+    <meta content="USA Government Congress Data" property="og:description">
+    <link href="./assets/styles/member-main-page.css" rel="stylesheet">
+    <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" rel="stylesheet">
+
+</head>
+<body>
+<div class="flex-container header-container">
+    <header>
+        <a class="logo-container" href="./index.html">
+            <img alt="TGIF Logo" class="logo" src="./assets/images/logo.png">
+            <span>TGIF</span>
+        </a>
+        <div class="contact-container">
+            <a href="mailto:test@gmail.com">test@gmail.com</a>
+        </div>
+    </header>
+</div>
+
+<div class="flex-container">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a aria-current="page" class="nav-link active" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="member-main-page.html"
+                           id="congressType" role="button">
+                            Congress 117
+                        </a>
+                        <ul aria-labelledby="congressType" class="dropdown-menu">
+                            <li><a class="dropdown-item" href="./member-main-page.html?chamber=house">House</a></li>
+                            <li><a class="dropdown-item" href="./member-main-page.html?chamber=senate">Senate</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"
+                           href="./statistics.html?page=attendance" id="attendance" role="button">
+                            Attendance
+                        </a>
+                        <ul aria-labelledby="attendance" class="dropdown-menu">
+                            <li><a class="dropdown-item"
+                                   href="./statistics.html?page=attendance&chamber=house">House</a></li>
+                            <li><a class="dropdown-item"
+                                   href="./statistics.html?page=attendance&chamber=senate">Senate</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"
+                           href="./statistics.html?page=loyalty" id="partyLoyalty" role="button">
+                            Party Loyalty
+                        </a>
+                        <ul aria-labelledby="partyLoyalty" class="dropdown-menu">
+                            <li><a class="dropdown-item" href="./statistics.html?page=loyalty&chamber=house">House</a>
+                            </li>
+                            <li><a class="dropdown-item" href="./statistics.html?page=loyalty&chamber=senate">Senate</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</div>
+
+<div class="flex-container">
+    <div class="senate">
+        <h1>Senators</h1>
+        <p>
+            First convened in 1789&#8218; the composition and powers of the Senate are established
+            in Article One of the U&#8228;S&#8228; Constitution&#8228; Each state is represented by two senators&#8218;
+            regardless of population&#8218; who serve staggered six-year terms&#8228; The Senate has
+            several exclusive powers not granted to the House&#8218; including consenting to
+            treaties as a precondition to their ratification and consenting to or confirming
+            appointments of Cabinet secretaries&#8218; federal judges&#8218; other federal executive
+            officials&#8218; military officers&#8218; regulatory officials&#8218; ambassadors&#8218; and other federal
+            uniformed officers&#8218; as well as trial of federal officials impeached by the House&#8228;
+        </p>
+    </div>
+    <div class="house">
+        <h1>Representatives</h1>
+        <p>
+            The major power of the House is to pass federal legislation that affects the entire country&#8218;
+            although its bills must also be passed by the Senate and further agreed to by the U&#8228;S&#8228; President
+            before
+            becoming law &#40;unless both the House and Senate re&#8208;pass the legislation with a two&#8208;thirds
+            majority in each chamber&#41;&#8228; The House has some exclusive powers&#58; the power to initiate
+            revenue bills&#8218; to impeach officials &#40;impeached officials are subsequently tried in the Senate&#41;&#8218;
+            and to elect the U&#8228;S&#8228; President in case there is no majority in the Electoral College&#8228;
+        </p>
+        <p>Each U&#8228;S&#8228; state is represented in the House in proportion to its population as measured in the
+            census&#8218; but every state is entitled to at least one representative&#8228;
+        </p>
+    </div>
+</div>
+
+<div class="flex-container">
+    <div class="filters">
+        <div class="party-filter">
+            <p>Filter by Party: </p>
+            <div class="form-check">
+                <input class="form-check-input" id="republican" type="checkbox" value="R">
+                <label class="form-check-label" for="republican">
+                    Republican
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" id="democrat" type="checkbox" value="D">
+                <label class="form-check-label" for="democrat">
+                    Democrat
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" id="independent" type="checkbox" value="ID">
+                <label class="form-check-label" for="independent">
+                    Independent
+                </label>
+            </div>
+        </div>
+        <div class="state-filter">
+            <p>Filter by State: </p>
+            <select aria-label=".form-select-sm example" class="form-select form-select-sm" id="stateList">
+                <option selected value="">Select A State</option>
+            </select>
+        </div>
+    </div>
+
+</div>
+
+<div class="flex-container">
+    <table class="table table-striped table-hover table-bordered border-dark">
+        <thead>
+        <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Party</th>
+            <th scope="col">State</th>
+            <th scope="col">Years in Office</th>
+            <th scope="col">% Votes with Party</th>
+        </tr>
+        </thead>
+        <tbody id="member-data">
+
+        </tbody>
+    </table>
+</div>
+
+<div id="loading">
+    <img alt="Loading..." id="loading-image" src="./assets/images/ajax-loader.gif"/>
+</div>
+
+<div class="alert alert-danger">
+    <strong>Warning!</strong> There is no member data, try again later.
+</div>
+
+<div class="flex-container">
+    <footer>
+        <p>&copy; 2024 TGIF | All Rights Reserved</p>
+    </footer>
+</div>
+
+<script src="./scripts/javascript/member-main-page.js" type="module"></script>
+</body>
+</html>
