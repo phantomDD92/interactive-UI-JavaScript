@@ -2,7 +2,7 @@ export async function fetchData(congressNo, chamber) {
     try {
         const response = await fetch(`https://api.propublica.org/congress/v1/${congressNo}/${chamber}/members.json`, {
             headers: {
-                'X-API-Key': 'ZOtpVNz4ptfFKTIG71HPlylBHnT5eQ6b8mttLtB5'
+                'X-API-Key': 'X-API-Key'
             }
         });
         const responseJSON = await response.json();
@@ -19,7 +19,7 @@ export async function fetchData(congressNo, chamber) {
 // export function fetchData (congressNo, chamber) {
 //   fetch(`https://api.propublica.org/congress/v1/${congressNo}/${chamber}/members.json`,{
 //     headers:{
-//       'X-API-Key': 'ZOtpVNz4ptfFKTIG71HPlylBHnT5eQ6b8mttLtB5'
+//       'X-API-Key': 'X-API-Key'
 //     }}).then(response => response.json())
 //        .then(responseJSON => {
 //           if(responseJSON.status >= 400 && responseJSON.status < 600)
